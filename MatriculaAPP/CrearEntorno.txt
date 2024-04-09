@@ -1,0 +1,20 @@
+#Crear entorno de python
+python -m venv mientorno
+
+#Activar entorno de python
+mientorno\Scripts\activate
+
+#Instalar Flask
+pip install flask
+
+#Paquetes instalados en el entorno virtual
+pip list
+
+#Guardar lista de dependencias de nuestro proyecto
+pip freeze > Requisitos.txt
+
+#Si un desarrollador necesita instalar las mismas dependencias para ejecutar el proyecto
+pip install -r Requisitos.txt
+
+#Ejecutar aplicacion desde linea de comandos
+python app.py

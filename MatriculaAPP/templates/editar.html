@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar Estudiante</title>
+</head>
+<body>
+    <h1>Editar Estudiante</h1>
+    <form method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" value="{{ estudiante[1] }}" required><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" value="{{ estudiante[2] }}" required><br>
+        <label for="cedula">Cédula:</label>
+        <input type="text" name="cedula" value="{{ estudiante[3] }}" required><br>
+        <label for="sexo">Sexo:</label>
+        <input type="text" name="sexo" value="{{ estudiante[4] }}" required><br>
+        <label for="direccion">Dirección:</label>
+        <input type="text" name="direccion" value="{{ estudiante[5] }}" required><br>
+        <label for="telefono">Teléfono:</label>
+        <input type="text" name="telefono" value="{{ estudiante[6] }}" required><br>
+        <input type="submit" value="Actualizar">
+    </form>
+</body>
+</html>
